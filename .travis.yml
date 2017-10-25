@@ -3,6 +3,12 @@ language: go
 go:
   - master
 
+sudo: false
+
+cache:
+  directories:
+    - /tmp/proto3.4.1
+
 script:
   - make install-tools
   - make
