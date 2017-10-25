@@ -24,4 +24,5 @@ deploy:
     file:  task_execution.swagger.json
     skip_cleanup: true
     on:
+      repo: psafont/task-execution-schemas
       tags: true
