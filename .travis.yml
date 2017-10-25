@@ -1,7 +1,15 @@
 language: go
+
 go:
-  -master
-script: make install-tools && make
+  - master
+
+script:
+  - make install-tools
+  - make
+
+before_script:
+  - bash tools/install-protobuf.sh 3.4.1
+  - export PATH=/tmp/proto3.4.1/bin:$PATH
 
 deploy:
   provider: releases
