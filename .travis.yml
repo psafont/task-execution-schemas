@@ -26,3 +26,4 @@ deploy:
     on:
       repo: psafont/task-execution-schemas
       tags: true
+      all_branches: true # needed because of travis bug
